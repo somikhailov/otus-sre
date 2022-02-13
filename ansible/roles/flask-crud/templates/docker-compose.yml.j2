@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  app:
+    image: "{{ image }}:{{ version }}"
+    container_name: flask-crud
+    ports:
+      - "80:5000"
+    volumes:
+      - db:/app/db/
+      - html:/app/templates
+volumes:
+  db: 
+  html:

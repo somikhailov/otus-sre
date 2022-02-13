@@ -1,0 +1,16 @@
+- name: install docker
+  hosts: all
+  become: true
+  roles:
+    - docker
+  tags: docker
+
+- name: deploy application
+  hosts: all
+  become: true
+  vars:
+    image: somikhaylov/flask-crud
+    version: v0.0.1 
+  roles:
+    - flask-crud
+  tags: app

@@ -1,0 +1,8 @@
+site_name: Otus SRE Homeworks
+site_url: https://somikhailov.github.io/otus-sre
+
+nav:
+   - Home: index.md
+   - Домашние задания: hw.md
+   - Создание диаграммы с помощью Diagrams: diagrams.md
+theme: readthedocs
