@@ -1,6 +1,8 @@
 # OTUS-SRE
 
-This project contains code for creating local enviroment with `vagrant` and deploy flask application in `docker` image with `ansible`.
+This project contains code for creating local enviroment with `vagrant` and deploy flask application in `docker` image with `ansible`. 
+
+* [More Documentation(Mkdocs)](https://somikhailov.github.io/otus-sre/)
 
 ![vagrant version](https://img.shields.io/badge/vagrant-~2.2-blue)
 ![ansible version](https://img.shields.io/badge/ansible-~2.10-green)
