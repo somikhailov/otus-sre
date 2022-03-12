@@ -32,7 +32,8 @@ galaxy_info:
   platforms:
   - name: Ubuntu
     versions:
-    - all
+    - 20.04
+    - 18.04
   # - name: SomePlatform
   #   versions:
   #   - all

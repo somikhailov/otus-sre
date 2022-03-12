@@ -1,8 +1,8 @@
 galaxy_info:
-  role_name: docker
+  role_name: flask-crud
   author: Sergei Mikhailov
   description: author
-  company: mycompany
+  company: otus
   namespace: somikhailov
 
   # If the issue tracker for your role is not on github, uncomment the
@@ -32,7 +32,8 @@ galaxy_info:
   platforms:
   - name: Ubuntu
     versions:
-    - all
+    - 20.04
+    - 18.04
   # - name: SomePlatform
   #   versions:
   #   - all
@@ -48,6 +49,8 @@ galaxy_info:
     # NOTE: A tag is limited to a single word comprised of alphanumeric characters.
     #       Maximum 20 tags per role.
 
-dependencies: []
+dependencies:
+  - role: docker
+    tags: docker
   # List your role dependencies here, one per line. Be sure to remove the '[]' above,
   # if you add dependencies to this list.

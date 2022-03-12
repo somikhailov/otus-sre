@@ -87,12 +87,12 @@ vagrant provision
 
 if your want use ansible manually
 ```
-ansible-playbook ansible/site.yml --tags app
+ansible-playbook ansible/site.yml --tags app --skip-tags docker
 ```
 
 or set `ANSIBLE_CONFIG`
 ```
-ANSIBLE_CONFIG=ansible.cfg ansible-playbook ansible/site.yml --tags ap
+ANSIBLE_CONFIG=ansible.cfg ansible-playbook ansible/site.yml --tags app --skip-tags docker
 ```
 
 ### Destroy
