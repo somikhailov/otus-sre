@@ -6,3 +6,4 @@
 
 * [Домашние задания.](hw.md)
 * [Создание диаграммы с помощью Diagrams](diagrams.md)
+* [SLI/SLO и риски](sli_slo_risks.md)
