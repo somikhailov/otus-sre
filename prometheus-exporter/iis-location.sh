@@ -11,6 +11,7 @@ cat << EOF
 # HELP iis_position_latitude The current latitude of the space station with a unix timestamp for the time the location was valid.
 # TYPE iis_position_latitude gauge
 iis_position_latitude $IIS_POSITION_LATITUDE $TIMESTAMP
+
 # HELP iis_position_longitude The current longitude of the space station with a unix timestamp for the time the location was valid.
 # TYPE iis_position_longitude gauge
 iis_position_longitude $IIS_POSITION_LONGITUDE $TIMESTAMP
