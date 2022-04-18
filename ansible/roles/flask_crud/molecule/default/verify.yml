@@ -5,6 +5,16 @@
   hosts: all
   gather_facts: false
   tasks:
-  - name: Example assertion
+  - name: "Include flask_crud vars"
+    include_vars: ../../defaults/main.yml
+
+  - name: Variable assertion
     assert:
-      that: true
+      that: 
+        - image is defined
+        - version is defined
+        
+  - name: Confirm that 200 OK response is returned
+    uri:
+      url: "http://{{ ansible_host }}"
+      status_code: 200

@@ -1,4 +1,4 @@
 ---
 # defaults file for ansible/roles/docker
 image: somikhaylov/flask-crud
-version: v0.0.1 
+version: v0.0.1` 
