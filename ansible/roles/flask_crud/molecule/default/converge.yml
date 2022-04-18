@@ -1,0 +1,8 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+  tasks:
+    - name: "Include flask_crud"
+      include_role:
+        name: "flask_crud"

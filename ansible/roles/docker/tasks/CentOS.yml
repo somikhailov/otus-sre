@@ -1,0 +1,29 @@
+- name: Check that the somefile.conf exists
+  stat:
+    path: /etc/yum.repos.d/docker-ce.repo
+  register: docker_repo
+
+- name: add docker repo
+  shell: dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+  when: not docker_repo.stat.exists
+  
+- name: install packages
+  dnf:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  loop:
+    - python3-pip
+    - docker-ce
+    - docker-ce-cli
+    - containerd.io
+
+- name: Install pip packages
+  pip:
+    name: "{{ item }}"
+    state: latest
+  loop:
+    - setuptools-rust
+    - pip
+    - docker >= 1.20
+    - docker-compose

@@ -1,5 +1,0 @@
-- name: Install pip packages
-  pip:
-    name: "{{ item }}"
-  loop:
-    - docker >= 1.20

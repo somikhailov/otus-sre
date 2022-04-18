@@ -34,6 +34,9 @@ galaxy_info:
     versions:
     - 20.04
     - 18.04
+  - name: CentOS
+    versions:
+    - stream 8
   # - name: SomePlatform
   #   versions:
   #   - all

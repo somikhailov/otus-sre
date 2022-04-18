@@ -1,0 +1,16 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: vagrant
+platforms:
+  - name: ubuntu
+    box: generic/ubuntu2004
+  - name: centos
+    box: centos/stream8
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
+verifier:
+  name: ansible
