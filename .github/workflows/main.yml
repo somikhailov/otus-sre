@@ -28,9 +28,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: run docker container
       run: docker run -d -p 5000:5000 --name flask-crud somikhaylov/flask-crud:v0.0.1
-    - name: curl
-      uses: wei/curl@master
-      with:
-        args: -s http://localhost:5000
+    - name: test port
+      run: docker port flask-crud 5000/tcp
     - name: destroy docker container
       run: docker rm -f flask-crud
